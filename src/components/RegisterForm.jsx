@@ -86,7 +86,7 @@ const RegisterForm = () => {
 	  placeholer="이름"
 	  value={name}
 	  onChange={e=> setName(e.target.value)}
-	  style={{ width:90%, marginBottom:'10px' }}
+	  style={{ width:'90%', marginBottom:'10px' }}
 	/>
 	</div>
       </form>
