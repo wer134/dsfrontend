@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginForm.css'; // 선택: 스타일 분리 가능
+import {Link} from 'react-router-dom';
+
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -43,9 +45,9 @@ const LoginForm = () => {
         <button type="submit" style={{ width: '100%' }}>로그인</button>
       </form>
       <div style={{ marginTop: '10px', textAlign: 'center' }}>
-        <a href="/register" style={{ fontSize: '0.9rem', color: '#007bff', textDecoration: 'none' }}>
-          회원가입
-        </a>
+	  <Link to="/register" style={{ fontSize: '0.9rem', color: '#007dff', textDecoration: 'none' }}>
+	  회원가입
+	  </Link>
       </div>
     </div>
   );
