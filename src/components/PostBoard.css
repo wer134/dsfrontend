@@ -1,0 +1,65 @@
+.board-container {
+  width: 800px;
+  margin: 30px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.board-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box select,
+.search-box input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  background-color: #0055aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.post-table th,
+.post-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.post-table th {
+  background-color: #003580;
+  color: white;
+}
+
+.post-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.new-label {
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+

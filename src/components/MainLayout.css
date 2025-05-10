@@ -1,0 +1,221 @@
+        /* 초기 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* 상단 헤더 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003580;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-right input {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .header-right button {
+            padding: 6px 15px;
+            background-color: #0055aa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .header-right a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* 카테고리 메뉴 */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            padding: 15px 20px;
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f4f4f4;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            width: auto;
+            min-width: 150px;
+            white-space: nowrap;
+            border-radius: 5px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px 15px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .dropdown a:hover {
+            background-color: #f4f4f4;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        /* 좌측 로그인 박스 */
+        .left-column {
+            width: 20%;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .left-column h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .left-column input {
+            width: 93%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .left-column button {
+            width: 93%;
+            padding: 8px;
+            background-color: #003580;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+        }
+
+        .links a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 메인 배너 */
+        .main-banner {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* 콘텐츠 영역 */
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content .main {
+            width: 75%;
+            padding: 0 20px;
+        }
+
+        .content .main table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .main table th,
+        .content .main table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .content .main table th {
+            background-color: #003580;
+            color: white;
+        }
+
+        /* 광고 */
+        .ad-box {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .ad-box img {
+            max-width: 100%;
+            height: auto;
+        }
