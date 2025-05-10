@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {HashRouter as Router, Routes, Route } from 'react-router-dom';
 import PostBoard from './components/PostBoard';
 import PostDetail from './components/PostDetail';
 import RegisterForm from './components/RegisterForm';
