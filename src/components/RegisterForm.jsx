@@ -7,6 +7,7 @@ const RegisterForm = () => {
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [isAvailable, setIsAvailable] = useState(null);
   const [message, setMessage] = useState('');
+  const [name, setName] = useState('');
   useEffect(() => {
     const check = setTimeout(() => {
       if (username) {
@@ -39,7 +40,7 @@ const RegisterForm = () => {
     }
 
     axios.post('http://localhost:8080/users/register', {
-      username, password
+      username, password,name
     }).then(() => {
       alert("회원가입 성공!");
       window.location.href = "/";
@@ -79,6 +80,15 @@ const RegisterForm = () => {
         </div>
         <button type="submit">회원가입</button>
         <div style={{ color: 'red' }}>{message}</div>
+	<div>
+	  <input
+	  type="text"
+	  placeholer="이름"
+	  value={name}
+	  onChange={e=> setName(e.target.value)}
+	  style={{ width:90%, marginBottom:'10px' }}
+	/>
+	</div>
       </form>
     </div>
   );
