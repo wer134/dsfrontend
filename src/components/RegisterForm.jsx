@@ -11,7 +11,7 @@ const RegisterForm = () => {
   useEffect(() => {
     const check = setTimeout(() => {
       if (username) {
-        axios.get(`http://localhost:8080/users/check/${username}`)
+        axios.get(`http://localhost:8080/users/${username}`)
           .then(res => {
             console.log('중복 확인 응답:', res.data);
             setIsAvailable(res.data.available);
